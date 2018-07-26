@@ -1,0 +1,36 @@
+{
+  "name": "next-material",
+  "version": "0.0.1",
+  "description": "Next.js on AWS Lambda leveraging serverless-http and material-ui",
+  "author": "Sebastian Kriems",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/skriems/next-material"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "dev:server": "npm run build && node server.js",
+    "prod:server": "npm run build && NODE_ENV=production node server.js",
+    "package": "npm run build && serverless package --verbose",
+    "deploy": "npm run package && serverless deploy"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "jss": "^9.8.7",
+    "next": "^6.1.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-jss": "^8.6.1",
+    "serverless-http": "^1.5.5"
+  },
+  "devDependencies": {
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-plugin-warmup": "^3.6.1-rc.1"
+  }
+}
