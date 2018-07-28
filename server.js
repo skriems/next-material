@@ -11,11 +11,14 @@ const createServer = () => {
   const server = express();
   server.use(compression());
   server.get('*', (req, res) => {
-    if (process.env.LAMBDA) {
-      // `assetPrefix` needs to match `serverless.yml:provider.stage
-      let assetPrefix = dev ? '/dev' : '/prod'
-      app.setAssetPrefix(assetPrefix)
+    let host = req.headers.host;
+    let assetPrefix = 'https://' + host;
+    if (host.indexOf('amazonaws.com') != -1) {
+      // needs to match the stages defined in `serverless.yml`
+      let stage = dev ? '/dev' : '/prod'
+      assetPrefix += stage;
     }
+    app.setAssetPrefix(assetPrefix);
     handle(req, res)}
   );
   return server;
