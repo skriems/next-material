@@ -27,10 +27,23 @@ package:
     - .git/**
 
 plugins:
+  - serverless-domain-manager
   - serverless-apigw-binary
   - serverless-plugin-warmup
 
 custom:
+  stage: ${opt:stage, self:provider.stage}
+  domain:
+    dev: dev.example.com
+    prod: prod.example.com
+  customDomain:
+    enabled: true
+    stage: ${self:custom.stage}
+    domainName: ${self:custom.domain.${self:custom.stage}}
+    certificateName: '*.example.com'
+    basePath: ''
+    createRoute53Record: true
+    endpointType: regional
   apigwBinary:
     types:
       - '*/*'
