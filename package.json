@@ -4,8 +4,8 @@
   "description": "Next.js on AWS Lambda leveraging serverless-http and material-ui",
   "author": "Sebastian Kriems",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/skriems/next-material"
+    "type": "git",
+    "url": "https://github.com/skriems/next-material"
   },
   "license": "MIT",
   "scripts": {
@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "serverless-apigw-binary": "^0.4.4",
+    "serverless-domain-manager": "^2.6.0",
     "serverless-plugin-warmup": "^3.6.1-rc.1"
   }
 }
