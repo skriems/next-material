@@ -1,5 +1,5 @@
-next-material
-=============
+next-material-aws-lambda
+========================
 
 A [Next.js](https://github.com/zeit/next.js/) deployment on AWS Lambda leveraging [serverless-http][] and [material-ui][].
 
