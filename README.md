@@ -5,8 +5,6 @@ A [Next.js](https://github.com/zeit/next.js/) deployment on AWS Lambda leveragin
 
 This is the official Next.js example from the material-ui repo which you can find [here][].
 
-Make sure that you have `serverless` installed globally. At the time of writing there's a [bug][] in version `1.28.0` which made me downgrade to version `1.27.3`.
-
 Deploy
 ------
 
