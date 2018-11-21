@@ -1,6 +1,8 @@
 next-material
 =============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/skriems/next-material-aws-lambda.svg)](https://greenkeeper.io/)
+
 A [Next.js](https://github.com/zeit/next.js/) deployment on AWS Lambda leveraging [serverless-http][] and [material-ui][].
 
 This is the official Next.js example from the material-ui repo which you can find [here][].
