@@ -1,6 +1,7 @@
 next-material-aws-lambda
 ========================
 
+[![Build Status](https://travis-ci.org/skriems/next-material-aws-lambda.svg?branch=master)](https://travis-ci.org/skriems/next-material-aws-lambda)
 [![Greenkeeper badge](https://badges.greenkeeper.io/skriems/next-material-aws-lambda.svg)](https://greenkeeper.io/)
 
 A [Next.js](https://github.com/zeit/next.js/) deployment on AWS Lambda leveraging [serverless-http][] and [material-ui][].
