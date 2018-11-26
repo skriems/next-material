@@ -11,10 +11,12 @@ This is the official Next.js example from the material-ui repo which you can fin
 Deploy
 ------
 
-Once you have `serverless` configured install with `yarn` or `npm`:
+Once you have `serverless` configured and created your Domain with `serverless create_domain` install with `yarn` or `npm`:
 
     $ yarn install
     $ npm run deploy
+
+One limitation though is, that currently HTTP is not redirected to HTTP.
 
 Development
 -----------
