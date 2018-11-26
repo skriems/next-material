@@ -16,7 +16,7 @@ Once you have `serverless` configured and created your Domain with `serverless c
     $ yarn install
     $ npm run deploy
 
-One limitation though is, that currently HTTP is not redirected to HTTP.
+One limitation though is, that currently HTTP is not redirected to HTTPS.
 
 Development
 -----------
