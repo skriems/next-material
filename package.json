@@ -32,6 +32,6 @@
   "devDependencies": {
     "serverless-apigw-binary": "^0.4.4",
     "serverless-domain-manager": "^2.6.0",
-    "serverless-plugin-warmup": "^3.6.1-rc.1"
+    "serverless-plugin-warmup": "^4.3.3-rc.1"
   }
 }
