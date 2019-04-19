@@ -27,7 +27,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-jss": "^8.6.1",
-    "serverless-http": "^1.5.5"
+    "serverless-http": "^2.0.0"
   },
   "devDependencies": {
     "serverless-apigw-binary": "^0.4.4",
